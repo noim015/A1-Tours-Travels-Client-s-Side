@@ -37,15 +37,15 @@ function App() {
        <Route path="/register">
          <Register></Register>
        </Route>
-       <Route path="/myorders">
+       <PrivateRoute path="/myorders">
          <MyOrders></MyOrders>
-       </Route>
-       <Route path="/manageallorders">
+       </PrivateRoute>
+       <PrivateRoute path="/manageallorders">
          <ManageAllOrders></ManageAllOrders>
-       </Route>
-       <Route path="/addnewservice">
+       </PrivateRoute>
+       <PrivateRoute path="/addanewservice">
          <AddNewService></AddNewService>
-       </Route>
+       </PrivateRoute>
        <PrivateRoute path="/packages/:key">
          <Details></Details>
        </PrivateRoute>
