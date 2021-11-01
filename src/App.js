@@ -12,6 +12,9 @@ import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Footer/Footer';
 import Packages from './Pages/Packages/Packages';
+import MyOrders from './Pages/MyOrders/MyOrders';
+import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
+import AddNewService from './Pages/AddNewService/AddNewService';
 
 function App() {
   return (
@@ -33,6 +36,15 @@ function App() {
        </Route>
        <Route path="/register">
          <Register></Register>
+       </Route>
+       <Route path="/myorders">
+         <MyOrders></MyOrders>
+       </Route>
+       <Route path="/manageallorders">
+         <ManageAllOrders></ManageAllOrders>
+       </Route>
+       <Route path="/addnewservice">
+         <AddNewService></AddNewService>
        </Route>
        <PrivateRoute path="/packages/:key">
          <Details></Details>
